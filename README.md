@@ -1,16 +1,5 @@
-# flutter_advanced_app
+Advanced App created it by following Eng Omar Ahmed Advanced course on youtube
 
-A new Flutter project.
+🎨 System Design 
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![application architcture](https://github.com/user-attachments/assets/01929e6e-584c-4b4c-ae36-9857565568a8)
