@@ -57,7 +57,7 @@ dependencies:
   # for splash screen
   flutter_native_splash: ^2.3.5
   # An SVG rendering and widget library for Flutter, which allows painting
-  flutter_svg: ^2.0.9
+  flutter_svg: ^2.0.10
   # for adapting screen and font size.
   flutter_screenutil: ^5.9.0
   firebase_core: ^2.27.0
