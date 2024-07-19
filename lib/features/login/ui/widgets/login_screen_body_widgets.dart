@@ -6,7 +6,7 @@ import '../../../../core/helper/spacing.dart';
 import '../../../../core/theming/text_style.dart';
 import '../../../../core/widgets/custom_text_button.dart';
 import '../../logic/login_cubit.dart';
-import 'already_have_acount.dart';
+import 'dont_have_account.dart';
 import 'email_and_password_section.dart';
 import 'login_bloc_listner.dart';
 
@@ -37,7 +37,7 @@ class LoginScreenBodyWidgets extends StatelessWidget {
         verticalSpace(16),
         const TermsAndConditionsText(),
         verticalSpace(60),
-        const AlreadyHaveAccountText(),
+        const DontHaveAccountText(),
         const LoginBlocListener(),
       ],
     );
