@@ -4,6 +4,7 @@ import 'package:flutter_advanced_app/features/login/logic/login_cubit.dart';
 import 'package:flutter_advanced_app/features/onboarding/ui/screens/onboarding_screen.dart';
 import 'package:flutter_advanced_app/features/signup/ui/screens/signup_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../features/home/ui/screens/home_screen.dart';
 import '../../features/login/ui/screens/login_screen.dart';
 import '../di/dependecy_injection.dart';
 
@@ -27,13 +28,10 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (_) => const SignUpScreen(),
         );
-      // case Routes.homeScreen:
-      //   return MaterialPageRoute(
-      //     builder: (_) => BlocProvider(
-      //       create: (context) => HomeCubit(getIt())..getSpecializations(),
-      //       child: const HomeScreen(),
-      //     ),
-      //   );
+      case Routes.homeScreen:
+        return MaterialPageRoute(
+          builder: (_) => const HomeScreen(),
+        );
       default:
         return null;
     }

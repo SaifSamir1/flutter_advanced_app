@@ -22,16 +22,15 @@ class LoginCubit extends Cubit<LoginState> {
         password: passwordController.text,
       ),
     );
-  //   response.when(success: (loginResponse) async {
-  //     await saveUserToken(loginResponse.userData?.token ?? '');
-  //     emit(LoginState.success(loginResponse));
-  //   }, failure: (error) {
-  //     emit(LoginState.error(error: error.apiErrorModel.message ?? ''));
-  //   });
-  // }
+    response.when(success: (loginResponse) async {
+      // await saveUserToken(loginResponse.userData?.token ?? '');
+      emit(LoginState.success(loginResponse));
+    }, failure: (error) {
+      emit(LoginState.error(error: error.apiErrorModel.message ?? ''));
+    });
+  }
 
   // Future<void> saveUserToken(String token) async {
   //   await SharedPrefHelper.setSecuredString(SharedPrefKeys.userToken, token);
   //   DioFactory.setTokenIntoHeaderAfterLogin(token);
   }
-}
