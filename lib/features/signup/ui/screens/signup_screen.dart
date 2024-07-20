@@ -1,12 +1,12 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_advanced_app/features/signup/ui/widgets/alredy_have_account.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/helper/spacing.dart';
 import '../../../../core/theming/text_style.dart';
 import '../../../../core/widgets/custom_text_button.dart';
-import '../../../login/ui/widgets/dont_have_account.dart';
 import '../../../login/ui/widgets/termes_and_conditions_text.dart';
 import '../../logic/signup_cubit.dart';
 import '../widgets/signup_form.dart';
@@ -49,7 +49,7 @@ class SignupScreen extends StatelessWidget {
                     verticalSpace(16),
                     const TermsAndConditionsText(),
                     verticalSpace(30),
-                    const DontHaveAccountText(),
+                    const AlreadyHaveAccountText(),
                     const SignupBlocListener(),
                   ],
                 ),
